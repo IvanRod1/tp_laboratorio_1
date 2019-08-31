@@ -8,5 +8,5 @@ int main()
     int numeroA = pedirNumero();
     int numeroB = pedirNumero();
     menuOpciones(numeroA,numeroB);
-    returnn 0;
+    return 0;
 }
