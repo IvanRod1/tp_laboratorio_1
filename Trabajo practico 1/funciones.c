@@ -19,18 +19,26 @@ do
             case 1:
                 resultado = sumarNumeros(a,b);
                 printf("\nEl resultado es %d\n",resultado);
+                system("pause");
+                system("cls");
                 break;
             case 2:
                 resultado = restarNumeros(a,b);
                 printf("\nEl resultado es %d\n",resultado);
+                system("pause");
+                system("cls");
                 break;
             case 3:
                 resultado = multiplicarNumeros(a,b);
                 printf("\nEl resultado es %d\n",resultado);
+                system("pause");
+                system("cls");
                 break;
             case 4:
                 resultadoDivision = dividirNumeros(a,b);
                 printf("\nEl resultado es %.2f\n",resultadoDivision);
+                system("pause");
+                system("cls");
                 break;
             case 5:
                 a = pedirNumero();
@@ -38,7 +46,6 @@ do
 
                 break;
             case 6:
-                a = pedirNumero();
                 break;
             default:
             printf("\nValor ingresado no valido\n");
@@ -90,7 +97,7 @@ int pedirNumero()
     scanf("%d",&numero);
     return numero;
 }
-void mensajeBienvenida(void)
+void mensajeInicio(void)
 {
     printf("                             Calculadora C                   \n");
 }

@@ -7,5 +7,5 @@ int multiplicarNumeros(int,int);
 int factorialNumero(int,int);
 void menuOpciones(int,int);
 int pedirNumero();
-void mensajeBienvenida(void);
+void mensajeInicio(void);
 

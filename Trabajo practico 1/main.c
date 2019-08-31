@@ -4,7 +4,7 @@
 
 int main()
 {
-    mensajeBienvenida();
+    mensajeInicio();
     int numeroA = pedirNumero();
     int numeroB = pedirNumero();
     menuOpciones(numeroA,numeroB);
