@@ -10,7 +10,7 @@ void menuOpciones(int a,int b)
 do
     {
         printf("\nEl numero 1 es: %d y el numero 2 es: %d\nQue quiere hacer con estos numeros?\n",a,b);
-        printf("\n1.Sumar\n2.Restar\n3.Multiplicar\n4.Dividir\n5.Pedir otro numero\n6.Factorial de un numero\n7.Salir\n");
+        printf("\n1.Sumar\n2.Restar\n3.Multiplicar\n4.Dividir\n5.Pedir otro numero\n6.Factorial de un numero\n7.Salir\nOpcion:");
         fflush(stdin);
         scanf("%d",&opcion);
 
@@ -43,12 +43,15 @@ do
             case 5:
                 a = pedirNumero();
                 b = pedirNumero();
+                system("pause");
+                system("cls");
 
                 break;
             case 6:
                 break;
             default:
             printf("\nValor ingresado no valido\n");
+
         }
 
 
@@ -101,4 +104,34 @@ void mensajeInicio(void)
 {
     printf("                             Calculadora C                   \n");
 }
-
+/* pedir un entero con puntero // int pedirNumero(char *mensaje)// int pedirAlgo("Ingrese peso");
+                                    {
+                                        int numero;
+                                        printf(mensaje);
+                                        scanf("%d",&numero);
+                                        return numero;
+                                    }
+pasaje por referencia porPuntero(&numero);
+void porPuntero (int *numero)
+{
+    *numero = 333;
+}
+int dividir(int dividendo,int divisor, int *respuesta)
+{
+    int sePudo = 1;
+    if (divisor != 0)
+    {
+        *respuesta =dividendo/divisor
+    }
+    else
+    {
+    sePudo = 0;
+    }
+    return sePudo;
+}
+en el main:
+int resultado;
+if(dividir(2,3,&resultado)==1)
+{
+    printf("se)
+}*/
