@@ -10,7 +10,10 @@ void menuOpciones()
     float resultadoDivision;
     int resultadoMultiplicacion;
     int opcion;
-    //int resultadoFactorial;
+    int factorialA;
+    int factorialB;
+
+
     do
 {
         mensajeInicio();
@@ -27,12 +30,16 @@ void menuOpciones()
         numeroB = pedirNumero("Ingrese segundo operando:");
         system("pause");
         system("cls");
+        break;
 
         case 3:
         resultadoSuma = sumarNumeros(numeroA,numeroB);
         resultadoResta = restarNumeros(numeroA,numeroB);
         resultadoMultiplicacion = multiplicarNumeros(numeroA,numeroB);
         resultadoDivision = dividirNumeros(numeroA,numeroB);
+        factorialA = factorial(numeroA);
+        factorialB = factorial(numeroB);
+        printf("Se realizaron las operaciones correctamente\n");
         system("pause");
         system("cls");
         break;
@@ -41,7 +48,17 @@ void menuOpciones()
         printf("El resultado de %d+%d es:%d\n",numeroA,numeroB,resultadoSuma);
         printf("El resultado de %d-%d es:%d\n",numeroA,numeroB,resultadoResta);
         printf("El resultado de %d*%d es:%d\n",numeroA,numeroB,resultadoMultiplicacion);
-        printf("El resultado de %d/%d es:%f\n",numeroA,numeroB,resultadoDivision);
+        if(numeroB != 0)
+        {
+            printf("El resultado de %d/%d es:%f\n",numeroA,numeroB,resultadoDivision);
+        }
+        else
+        {
+            printf("No se puede dividir %d entre 0\n",numeroA);
+        }
+        printf("El factorial de %d! es %d y el factorial de %d! es %d\n",numeroA,factorialA,numeroB,factorialB);
+
+
         system("pause");
         system("cls");
         break;
@@ -80,17 +97,23 @@ int multiplicarNumeros(int numA, int numB)
 float dividirNumeros(int numA,int numB)
 {
     float auxiliarResultado;
-    if (numB != 0)
-    {
-        auxiliarResultado = numA/(float)numB;
-        return auxiliarResultado;
-    }
-    else
-    {
-      printf("\nNo se puede dividir entre 0\n");
-    }
-    return 0;
+
+    auxiliarResultado = numA/(float)numB;
+    return auxiliarResultado;
+
 }
+unsigned int factorial(int numero)
+{
+    unsigned int resultado = 1;
+    int i;
+
+   for(i=numero;i>=1;i--)
+   {
+    resultado =  resultado * i;
+   }
+    return resultado;
+}
+
 void mensajeInicio(void)
 {
     printf("\t\tCalculadora C\t\t\n1.Elegir primer operando\n2.Elegir segundo operando\n3.Calcular las operaciones\n4.Mostrar las operaciones\n5.Salir\n");
