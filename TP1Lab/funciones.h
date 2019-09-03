@@ -1,11 +1,8 @@
-#include <stdio.h>
-#include <stdlib.h>
 int sumarNumeros (int,int);
 int restarNumeros(int,int);
 float dividirNumeros(int,int);
 int multiplicarNumeros(int,int);
 int factorialNumero(int);
-void menuOpciones(int,int);
-int pedirNumero();
+void menuOpciones();
+int pedirNumero(char*);
 void mensajeInicio(void);
-

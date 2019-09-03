@@ -10,7 +10,7 @@ void menuOpciones(int a,int b)
 do
     {
         printf("\nEl numero 1 es: %d y el numero 2 es: %d\nQue quiere hacer con estos numeros?\n",a,b);
-        printf("\n1.Sumar\n2.Restar\n3.Multiplicar\n4.Dividir\n5.Pedir otro numero\n6.Factorial de un numero\n7.Salir\nOpcion:");
+        printf("\n1.Sumar\n2.Restar\n3.Multiplicar\n4.Dividir\n5.Factorial de un numero\n6.Pedir otro numero\n7.Salir\nOpcion:");
         fflush(stdin);
         scanf("%d",&opcion);
 
@@ -48,6 +48,8 @@ do
 
                 break;
             case 6:
+
+
                 break;
             default:
             printf("\nValor ingresado no valido\n");
@@ -91,6 +93,20 @@ float dividirNumeros(int numA,int numB)
       printf("\nNo se puede dividir entre 0\n");
     }
     return 0;
+}
+int factorialNumero(int numero)
+{
+    int factorial;
+    if(numero <= 1)
+    {
+        printf("No es posible sacar factorial de este numero");
+        factorial = 0;
+    }
+    else
+    {
+        factorial = numero * factorialNumero(numero-1);
+    }
+    return factorial;
 }
 
 int pedirNumero()
