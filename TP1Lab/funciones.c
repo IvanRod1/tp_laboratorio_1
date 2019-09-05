@@ -1,6 +1,11 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "funciones.h"
+/** \brief contiene toda la funcion necesaria para correr la calculadora
+ *
+ * \return void
+ *
+ */
 void menuOpciones()
 {
     int numeroA;
@@ -56,7 +61,7 @@ void menuOpciones()
         {
             printf("No se puede dividir %d entre 0\n",numeroA);
         }
-        printf("El factorial de %d! es %d y el factorial de %d! es %d\n",numeroA,factorialA,numeroB,factorialB);
+        printf("El factorial de %d! es: %d y el factorial de %d! es: %d\n",numeroA,factorialA,numeroB,factorialB);
 
 
         system("pause");
@@ -73,27 +78,52 @@ int pedirNumero(char* mensaje)
     scanf("%d",&numero);
     return numero;
 }
+/** \brief se encarga de sumar dos enteros
+ *
+ * \param int numA representa el primer operando de la suma
+ * \param  int  numB representa el segundo operando de la suma
+ * \return int auxiliarResultado devuelve el resultado de la suma entre dos enteros
+ *
+ */
 int sumarNumeros(int numA,int numB)
 {
     int auxiliarResultado;
     auxiliarResultado = numA + numB;
     return auxiliarResultado;
 }
-
+/** \brief se encarga de restar dos enteros
+ *
+ * \param int numA representa el primer operando de la resta
+ * \param int numBrepresenta el segundo operando de la resta
+ * \return int auxiliarResultado devuelve el resultado de la resta entre dos enteros
+ *
+ */
 int restarNumeros(int numA,int numB)
 {
     int auxiliarResultado;
     auxiliarResultado = numA - numB;
     return auxiliarResultado;
 }
-
+/** \brief se encarga de multiplicar dos numeros
+ *
+ * \param int numA es el primer operando de la multiplicacion
+ * \param int numB es el segundo operando de la multiplicacion
+ * \return int auxiliarResultado devuelve el resultado de la multiplicacion entre dos enteros
+ *
+ */
 int multiplicarNumeros(int numA, int numB)
 {
     int auxiliarResultado;
     auxiliarResultado = numA * numB;
     return auxiliarResultado;
 }
-
+/** \brief se encarga de dividir dos enteros
+ *
+ * \param int numA es el dividendo de la division
+ * \param int numB es el divisor de la division
+ * \return float auxiliarResultado devuelve el resultado de la division entre dos enteros
+ *
+ */
 float dividirNumeros(int numA,int numB)
 {
     float auxiliarResultado;
@@ -102,6 +132,12 @@ float dividirNumeros(int numA,int numB)
     return auxiliarResultado;
 
 }
+/** \brief se encarga de buscar el factorial de un numero con iteraciones
+ *
+ * \param numero int es el entero a ser factoreado
+ * \return unsigned int devuelve el resultado del factoreo
+ *
+ */
 unsigned int factorial(int numero)
 {
     unsigned int resultado = 1;
@@ -114,6 +150,12 @@ unsigned int factorial(int numero)
     return resultado;
 }
 
+/** \brief muestra las opciones
+ *
+ * \param void
+ * \return void
+ *
+ */
 void mensajeInicio(void)
 {
     printf("\t\tCalculadora C\t\t\n1.Elegir primer operando\n2.Elegir segundo operando\n3.Calcular las operaciones\n4.Mostrar las operaciones\n5.Salir\n");
