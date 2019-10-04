@@ -1,0 +1,41 @@
+# depslib dependency file v1.0
+1569790894 source:c:\users\ivan0\desktop\facultad\practica\tp 2 nuevo\main.c
+	"arrayEmpleados.h"
+
+1569792385 c:\users\ivan0\desktop\facultad\practica\tp 2 nuevo\arrayempleados.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"gets.h"
+
+1569790853 source:c:\users\ivan0\desktop\facultad\practica\tp 2 nuevo\arrayempleados.c
+	"arrayEmpleados.h"
+
+1569786494 source:c:\users\ivan0\desktop\facultad\practica\tp 2 nuevo\gets.c
+	"gets.h"
+
+1569785813 c:\users\ivan0\desktop\facultad\practica\tp 2 nuevo\gets.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1569870863 source:c:\users\ivan0\desktop\facultad\programacion\programacion-1-2-cuatrimestre-\tp 2 nuevo\gets.c
+	"gets.h"
+
+1570212590 c:\users\ivan0\desktop\facultad\programacion\programacion-1-2-cuatrimestre-\tp 2 nuevo\gets.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1570212433 source:c:\users\ivan0\desktop\facultad\programacion\programacion-1-2-cuatrimestre-\tp 2 nuevo\main.c
+	"arrayEmpleados.h"
+
+1570212250 c:\users\ivan0\desktop\facultad\programacion\programacion-1-2-cuatrimestre-\tp 2 nuevo\arrayempleados.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"gets.h"
+
+1570212250 source:c:\users\ivan0\desktop\facultad\programacion\programacion-1-2-cuatrimestre-\tp 2 nuevo\arrayempleados.c
+	"arrayEmpleados.h"
+
